@@ -156,7 +156,7 @@ resource keyVaultSecret 'Microsoft.KeyVault/vaults/secrets@2021-06-01-preview' =
   }
 }
 
-// See https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#:~:text=17d1049b-9a84-46fb-8f53-869881c3d3ab
+// See https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#all
 resource roleAssignment 'Microsoft.Authorization/roleAssignments@2020-04-01-preview' = [for (name, i) in roleArray: {
   scope: keyVault
   name: guid(resourceGroup().id, subscriptionResourceId('Microsoft.Authorization/roleDefinitions', '${rolesObject[name].roleId}'))
