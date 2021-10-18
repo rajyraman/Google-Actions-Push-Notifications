@@ -1,0 +1,16 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL" && (session.params.location.permissionStatus == "PERMISSION_GRANTED" || session.params.location.permissionStatus == "ALREADY_GRANTED")
+  handler:
+    webhookHandler: numbersBySuburb
+slots:
+- commitBehavior:
+    writeSessionParam: location
+  config:
+    '@type': type.googleapis.com/google.actions.conversation.v3.PermissionValueSpec
+    context: I need your device location in order to process your request
+    permissions:
+    - DEVICE_PRECISE_LOCATION
+  name: location
+  required: true
+  type:
+    name: actions.type.Permission

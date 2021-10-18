@@ -1,0 +1,4 @@
+parameters:
+- name: suburb
+  type:
+    name: suburb

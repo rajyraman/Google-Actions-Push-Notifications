@@ -1,0 +1,6 @@
+candidates:
+- promptResponse:
+    firstSimple:
+      variants:
+      - speech: Ok, I'll not send you daily notifications.
+      - text: Ok, I'll not send you daily notifications.

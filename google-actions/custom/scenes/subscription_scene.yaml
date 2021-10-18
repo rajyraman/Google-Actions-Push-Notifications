@@ -1,0 +1,30 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL" && (session.params.location.permissionStatus == "PERMISSION_GRANTED" || session.params.location.permissionStatus == "ALREADY_GRANTED") && (session.params.notifications.permissionStatus == "PERMISSION_GRANTED" || session.params.notifications.permissionStatus == "ALREADY_GRANTED")
+  handler:
+    webhookHandler: subscribeToNotifications
+  transitionToScene: actions.scene.END_CONVERSATION
+- condition: session.params.location.permissionStatus == "UNVERIFIED_USER"
+  handler:
+    webhookHandler: numbersByLocation
+  transitionToScene: actions.scene.END_CONVERSATION
+slots:
+- commitBehavior:
+    writeSessionParam: location
+  config:
+    '@type': type.googleapis.com/google.actions.conversation.v3.PermissionValueSpec
+    context: I need your device location in order to process your request
+    permissions:
+    - DEVICE_PRECISE_LOCATION
+  name: location
+  required: true
+  type:
+    name: actions.type.Permission
+- commitBehavior:
+    writeSessionParam: notifications
+  config:
+    intent:
+      intentName: IncomingPushNotifications_Intent
+  name: notifications
+  required: true
+  type:
+    name: actions.type.Notifications

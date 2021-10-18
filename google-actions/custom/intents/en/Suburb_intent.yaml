@@ -1,0 +1,14 @@
+trainingPhrases:
+- latest numbers
+- exposures
+- exposure details
+- numbers in ($suburb 'prahran' auto=false)
+- numbers in ($suburb 'melbourne' auto=false)
+- numbers in ($suburb 'truganina' auto=false)
+- cases in ($suburb 'werribee' auto=false)
+- cases in ($suburb 'south melbourne' auto=false)
+- exposures in ($suburb 'bendigo' auto=false)
+- exposures in ($suburb 'geelong' auto=false)
+- exposures sites in ($suburb 'altona north' auto=false)
+- exposures sites in ($suburb 'narre warren' auto=false)
+- exposures sites in ($suburb 'berwick' auto=false)

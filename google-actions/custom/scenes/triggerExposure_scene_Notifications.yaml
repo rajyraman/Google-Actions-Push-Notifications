@@ -1,0 +1,22 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL" && (session.params.NotificationsSlot_PushNotifications_Intent.permissionStatus == "PERMISSION_GRANTED" || session.params.NotificationsSlot_PushNotifications_Intent.permissionStatus == "ALREADY_GRANTED")
+  handler:
+    staticPromptName: static_prompt_2
+    webhookHandler: subscribeToNotifications
+  transitionToScene: actions.scene.END_CONVERSATION
+- condition: scene.slots.status == "FINAL" && session.params.NotificationsSlot_PushNotifications_Intent.permissionStatus != "PERMISSION_GRANTED" && session.params.NotificationsSlot_PushNotifications_Intent.permissionStatus != "ALREADY_GRANTED"
+  handler:
+    staticPromptName: static_prompt_3
+  transitionToScene: actions.scene.END_CONVERSATION
+slots:
+- commitBehavior:
+    writeSessionParam: NotificationsSlot_IncomingPushNotifications_Intent
+  config:
+    intent:
+      intentName: IncomingPushNotifications_Intent
+  defaultValue:
+    sessionParam: NotificationsSlot_IncomingPushNotifications_Intent
+  name: NotificationsSlot_IncomingPushNotifications_Intent
+  required: true
+  type:
+    name: actions.type.Notifications

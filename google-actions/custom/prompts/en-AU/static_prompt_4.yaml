@@ -1,0 +1,6 @@
+candidates:
+- promptResponse:
+    firstSimple:
+      variants:
+      - speech: What would you like to know?
+      - text: What would you like to know?

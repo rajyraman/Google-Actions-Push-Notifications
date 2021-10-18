@@ -1,0 +1,14 @@
+custom:
+  Default_Welcome_Intent:
+    engagement:
+      title: exposure notifications
+  IncomingPushNotifications_Intent:
+    engagement:
+      title: exposure notifications
+  Notifications_Intent:
+    engagement:
+      title: new exposures
+  Suburb_intent:
+    engagement:
+      title: exposure notifications
+  actions.intent.MAIN: {}

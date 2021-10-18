@@ -1,0 +1,17 @@
+custom:
+  Default_Welcome_Intent:
+    engagement:
+      dailyUpdate: {}
+      pushNotification: {}
+  IncomingPushNotifications_Intent:
+    engagement:
+      dailyUpdate: {}
+      pushNotification: {}
+  Notifications_Intent:
+    engagement:
+      dailyUpdate: {}
+      pushNotification: {}
+  Suburb_intent:
+    engagement:
+      dailyUpdate: {}
+  actions.intent.MAIN: {}

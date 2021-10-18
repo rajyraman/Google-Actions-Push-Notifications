@@ -1,0 +1,6 @@
+trainingPhrases:
+- ($suburb 'geelong' auto=false) daily notifications
+- ($suburb 'cranbourne' auto=false) daily notifications
+- notify me daily about ($suburb 'melbourne' auto=false)
+- send me daily updates for ($suburb 'narre warren' auto=false)
+- update me daily about ($suburb 'berwick' auto=false)

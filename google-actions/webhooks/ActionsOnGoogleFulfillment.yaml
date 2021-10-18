@@ -1,0 +1,7 @@
+handlers:
+- name: numbersBySuburb
+- name: subscribeToNotifications
+- name: numbersByLocation
+httpsEndpoint:
+  baseUrl: FLOWURL
+  endpointApiVersion: 2

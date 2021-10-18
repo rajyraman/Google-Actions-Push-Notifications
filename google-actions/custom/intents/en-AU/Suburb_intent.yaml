@@ -1,0 +1,16 @@
+trainingPhrases:
+- ($suburb 'cranbourne south' auto=false) covid cases
+- covid numbers in ($suburb 'mount martha' auto=false)
+- covid cases in ($suburb 'toorak' auto=false)
+- numbers in ($suburb 'carlton' auto=false)
+- ($suburb 'Hoppers Crossing' auto=false) cases
+- cases in ($suburb 'bendigo' auto=false)
+- cases in ($suburb 'reservoir' auto=false)
+- ($suburb 'ivanhoe' auto=false) numbers
+- ($suburb 'prahran' auto=false) numbers
+- active cases in ($suburb 'geelong' auto=false)
+- ($suburb 'werribee' auto=false) numbers
+- ($suburb 'melbourne' auto=false) numbers
+- ($suburb 'cranbourne' auto=false) cases
+- ($suburb 'narre warren' auto=false) numbers
+- ($suburb 'berwick' auto=false) cases

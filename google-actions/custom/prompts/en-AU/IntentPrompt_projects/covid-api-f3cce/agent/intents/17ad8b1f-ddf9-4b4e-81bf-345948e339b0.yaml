@@ -1,0 +1,16 @@
+candidates:
+- promptResponse:
+    firstSimple:
+      variants:
+      - speech: I didn't get that. Can you say it again?
+      - speech: I missed what you said. What was that?
+      - speech: Sorry, could you say that again?
+      - speech: Sorry, can you say that again?
+      - speech: Can you say that again?
+      - speech: Sorry, I didn't get that. Can you rephrase?
+      - speech: Sorry, what was that?
+      - speech: One more time?
+      - speech: What was that?
+      - speech: Say that one more time?
+      - speech: I didn't get that. Can you repeat?
+      - speech: I missed that, say that again?

@@ -1,0 +1,14 @@
+intentEvents:
+- handler:
+    webhookHandler: numbersBySuburb
+  intent: Suburb_intent
+- intent: Notifications_Intent
+  transitionToScene: subscription_scene
+- intent: IncomingPushNotifications_Intent
+  transitionToScene: actions.scene.END_CONVERSATION
+slots:
+- commitBehavior:
+    writeSessionParam: exposure_suburb
+  name: exposure_suburb
+  type:
+    name: suburb
