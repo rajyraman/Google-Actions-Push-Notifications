@@ -1,6 +1,10 @@
 param location string = resourceGroup().location
 param appNameSuffix string = uniqueString(resourceGroup().id)
-param keyVaultSku string = 'Standard'
+@allowed([
+  'standard'
+  'premium'
+])
+param keyVaultSku string = 'standard'
 param userId string
 param googleAccountEmail string
 @secure()
