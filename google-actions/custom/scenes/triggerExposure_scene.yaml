@@ -6,6 +6,8 @@ intentEvents:
   transitionToScene: subscription_scene
 - intent: IncomingPushNotifications_Intent
   transitionToScene: actions.scene.END_CONVERSATION
+onEnter:
+  staticPromptName: static_prompt_1
 slots:
 - commitBehavior:
     writeSessionParam: exposure_suburb

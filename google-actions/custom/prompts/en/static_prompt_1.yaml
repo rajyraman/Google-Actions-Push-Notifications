@@ -1,0 +1,5 @@
+candidates:
+- promptResponse:
+    firstSimple:
+      variants:
+      - speech: Enter the response that users will see or hear when this event occurs

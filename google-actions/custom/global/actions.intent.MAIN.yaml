@@ -1,3 +1,1 @@
-handler:
-  staticPromptName: static_prompt_4
 transitionToScene: triggerExposure_scene
